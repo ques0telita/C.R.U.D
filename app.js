@@ -19,7 +19,7 @@ app.post('/talleres', (req, res) => {
 });
 
 // ==========================================
-// 2. ELIMINAR (DELETE) -> borramos por ID
+// 2. ELIMINAR (DELETE) -> borramos un taller por su ID
 // ==========================================
 app.delete('/talleres/:id', (req, res) => {
     const idBuscar = parseInt(req.params.id);
@@ -47,7 +47,7 @@ app.put('/talleres/:id', (req, res) => {
 });
 
 // ==========================================
-// 4. LEER (GET) -> mostramos la lista completa
+// 4. LEER (GET) -> mostramos la lista completa de talleres
 // ==========================================
 app.get('/talleres', (req, res) => {
     res.send(infoTalleres);

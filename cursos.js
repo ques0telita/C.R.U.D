@@ -1,10 +1,10 @@
-let infoTalleres = 
-talleres[
-    { 
-        id: 1,
-        titulo: "Introduccion a git y gitHub",
-        duracion: "3 horas",
-        nivel: "basico"
+let infoTalleres = {
+    talleres: [
+        { 
+            id: 1,
+            titulo: "Introduccion a git y gitHub",
+            duracion: "3 horas",
+            nivel: "basico"
     },
     { 
         id: 2,
@@ -18,6 +18,7 @@ talleres[
         duracion: "5 horas",
         nivel: "intermedio"
     }
-];
+],
+}
 
 module.exports.infoTalleres = infoTalleres;
