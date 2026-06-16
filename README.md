@@ -1,8 +1,8 @@
-# C.R.U.D - Sistema de Gestion de datos
+# C. R. U. D - Sistema de gestion de datos
 
 Este es un proyecto backend desarrollado con **Node.js** y **Express** que implementa un sistema básico de administración de talleres (C.R.U.D) en memoria. Permite listar, agregar, actualizar y eliminar talleres utilizando diferentes métodos y rutas HTTP.
 
-## 🚀 Características y rutas (Endpoints)
+## 🚀 Caracteristicas y rutas (Endpoints) 
 
 La API cuenta con los siguientes endpoints configurados para interactuar con la lista de talleres:
 
