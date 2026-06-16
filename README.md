@@ -1,31 +1,32 @@
-# 🚀 CRUD - Sistema de Gestión de Talleres
+# C.R.U.D - Sistema de Gestion de datos
 
-Este proyecto es una API REST funcional y simplificada construida con **Node.js** y **Express** para administrar un listado de talleres técnicos. Desarrollado como práctica académica de backend para comprender el funcionamiento de las rutas y los métodos HTTP básicos.
+Este es un proyecto backend desarrollado con **Node.js** y **Express** que implementa un sistema básico de administración de talleres (C.R.U.D) en memoria. Permite listar, agregar, actualizar y eliminar talleres utilizando diferentes métodos y rutas HTTP.
 
----
+## 🚀 Características y rutas (Endpoints)
 
-### 🔀 Rutas de la API (Endpoints) para Insomnia
+La API cuenta con los siguientes endpoints configurados para interactuar con la lista de talleres:
 
-| Método | Endpoint | ¿Qué hace? | ¿Lleva Body (JSON)? |
-| :--- | :--- | :--- | :--- |
-| **GET** | `http://localhost:3000/talleres` | Ver todos los talleres | No |
-| **POST** | `http://localhost:3000/talleres` | Crear un taller nuevo | **Sí** (tema y duracion) |
-| **PUT** | `http://localhost:3000/talleres/:id` | Editar un taller por su ID | **Sí** (tema y duracion) |
-| **DELETE** | `http://localhost:3000/talleres/:id` | Eliminar un taller por su ID | No |
+* **GET** `/talleres`: Devuelve la lista completa de todos los talleres disponibles.
+* **POST** `/talleres`: Agrega un nuevo taller al listado. Requiere enviar un JSON en el cuerpo (`body`) de la petición con las propiedades: `titulo`, `duracion` y `nivel`.
+* **PUT** `/talleres/:id`: Actualiza por completo un taller existente buscando por su ID. Se deben enviar todos los campos en el cuerpo de la petición.
+* **PATCH** `/talleres/:id`: Realiza una actualización parcial de un taller. Permite modificar unicamente las propiedades enviadas (por ejemplo, solo cambiar la duracion o el titulo).
+* **DELETE** `/talleres/:id`: Elimina un taller de forma definitiva del sistema segun el ID especificado en la URL.
 
----
+## 🛠️ Tecnologias utilizadas
 
-### 🚀 Cómo Iniciar el Servidor
+* **Node.js**: Entorno de ejecución para JavaScript en el servidor.
+* **Express**: Framework web para la creación de la API y el manejo de rutas HTTP.
+* **Insomnia / Postman**: Herramientas utilizadas para realizar las pruebas de las peticiones a los endpoints.
 
-1. Instalar las dependencias (solo la primera vez):
-   ```bash
+## 💻 Instalacion y uso
+
+1. Clona este repositorio en tu máquina local.
+2. Abre una terminal en la carpeta raíz del proyecto.
+3. Instala las dependencias necesarias ejecutando:
+```bash
    npm install
-
----
-
-## 🛠️ Instalación y Uso
-
-1. Descarga o clona este repositorio en tu computadora.
-2. Abre una terminal dentro de la carpeta del proyecto e instala las dependencias necesarias:
-   ```bash
-   npm install  
+``` 
+## Iniciar el servidor en el terminal con el siguiente comando
+```Terminal
+   node app.js
+``` 
